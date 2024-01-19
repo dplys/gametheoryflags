@@ -23,7 +23,7 @@ def turn(activePlayer, numberOfMatches):
     if activePlayer == "p":
         print(numberOfMatches * "I")
         inputNumber = int(input("Enter number of matches to delete: 1, 2 or 3\n"))
-        while not (inputNumber == "1" or inputNumber == "2" or inputNumber == "3"):
+        while not (inputNumber == 1 or inputNumber == 2 or inputNumber == 3):
             inputNumber = int(input("Invalid input. Enter number of matches to delete: 1, 2 or 3\n"))
         numberOfMatches = numberOfMatches - inputNumber
         activePlayer = "c"
